@@ -2,7 +2,7 @@ var divSelection = document.querySelectorAll(".boxes");
 var audioFiles = document.querySelectorAll("audio");
 var keys = ['a','s','d','f','g','h','j','k','l'];
 document.body.addEventListener('keydown',function(e){
-    var i = keys.indexOf(e.key)
+    var i = keys.indexOf(e.key.toLowerCase())
     if(i!==-1)
     {
         divSelection[i].classList.add("onevent");
